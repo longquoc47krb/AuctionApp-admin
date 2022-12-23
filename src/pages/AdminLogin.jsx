@@ -54,7 +54,7 @@ function Login() {
         });
       case true:
         setTimeout(() => {
-          navigate("/admin");
+          navigate("/");
         }, 5000);
         return AlertPopup({
           title: t("popup.login.success"),

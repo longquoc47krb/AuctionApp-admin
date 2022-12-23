@@ -17,7 +17,7 @@ function Footer() {
               src={process.env.PUBLIC_URL + "/logo.png"}
               class="mr-3 h-12"
               alt="Lotus Ticket Logo"
-              onClick={() => navigate("/admin")}
+              onClick={() => navigate("/")}
             />
             <span
               style={{ fontFamily: "Montserrat" }}

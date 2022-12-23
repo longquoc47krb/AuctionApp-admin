@@ -519,7 +519,7 @@ export const links = [
     links: [
       {
         name: "sider.overview",
-        route: "admin/overview",
+        route: "overview",
         icon: <FiShoppingBag />,
       },
     ],
@@ -530,17 +530,17 @@ export const links = [
     links: [
       {
         name: "sider.account",
-        route: "admin/accounts",
+        route: "accounts",
         icon: <MdOutlineAccountCircle />,
       },
       {
         name: "sider.product",
-        route: "admin/products",
+        route: "products",
         icon: <BsBoxSeam />,
       },
       {
         name: "sider.category",
-        route: "admin/category",
+        route: "category",
         icon: <AiOutlineShoppingCart />,
       },
     ],

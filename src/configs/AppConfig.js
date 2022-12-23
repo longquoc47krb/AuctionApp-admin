@@ -20,7 +20,7 @@ import theme from "../shared/theme";
 const USER_CONFIG = {
   SYSTEM_ADMIN: {
     roleLevel: 1,
-    landingPage: "/admin",
+    landingPage: "/",
   },
   ORGANIZATION_ADMIN: {
     roleLevel: 2,

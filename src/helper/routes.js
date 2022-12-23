@@ -29,33 +29,33 @@ const AccountPage = Loadable({
 export const routes = [
   {
     element: <LoginPage />,
-    path: "/admin/login",
+    path: "/login",
   },
 ];
 export const privateRoutes = [
   {
     element: <AccountPage />,
-    path: "/admin/accounts",
+    path: "/accounts",
   },
   {
     element: <ProductsPage />,
-    path: "/admin/products",
+    path: "/products",
   },
   {
     element: <CreateEditProductPage />,
-    path: "/admin/product/create",
+    path: "/product/create",
   },
   {
     element: <OverviewPage />,
-    path: "/admin/overview",
+    path: "/overview",
   },
   {
     element: <OverviewPage />,
-    path: "/admin",
+    path: "/",
   },
   {
     element: <Categories />,
-    path: "/admin/category",
+    path: "/category",
   },
 ];
 export { ProductsPage, OverviewPage, Categories };
