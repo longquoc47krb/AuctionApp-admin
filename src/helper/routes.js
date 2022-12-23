@@ -47,11 +47,11 @@ export const privateRoutes = [
   },
   {
     element: <OverviewPage />,
-    path: "/admin/",
+    path: "/admin/overview",
   },
   {
     element: <OverviewPage />,
-    path: "/admin/overview",
+    path: "/admin",
   },
   {
     element: <Categories />,
