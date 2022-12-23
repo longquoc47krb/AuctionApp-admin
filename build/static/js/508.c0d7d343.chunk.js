@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_admin_dashboard_tables_charts_calendar_kanban=self.webpackChunkreact_admin_dashboard_tables_charts_calendar_kanban||[]).push([[508],{6508:function(a,e,n){n.r(e);n(2791);var d=n(184);e.default=function(){return(0,d.jsx)("div",{className:"m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl"})}}}]);
+//# sourceMappingURL=508.c0d7d343.chunk.js.map
