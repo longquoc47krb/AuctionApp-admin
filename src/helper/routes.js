@@ -5,6 +5,10 @@ const ProductsPage = Loadable({
   loader: () => import("../pages/Products"),
   loading: Loading,
 });
+const RequestWithdrawPage = Loadable({
+  loader: () => import("../pages/RequestWithdrawList"),
+  loading: Loading,
+});
 const OverviewPage = Loadable({
   loader: () => import("../pages/Overview"),
   loading: Loading,
@@ -31,12 +35,28 @@ export const routes = [
     element: <LoginPage />,
     path: "/login",
   },
+  {
+    element: <RequestWithdrawPage />,
+    path: "/dashboard/reconcile/success",
+  },
 ];
 export const privateRoutes = [
   {
     element: <AccountPage />,
     path: "/accounts",
   },
+  {
+    element: <RequestWithdrawPage />,
+    path: "/request-withdraw",
+  },
+  {
+    element: <RequestWithdrawPage />,
+    path: "/request-withdraw/success",
+  },
+  // {
+  //   element: <RequestWithdrawPage />,
+  //   path: "/dashboard/reconcile/success",
+  // },
   {
     element: <ProductsPage />,
     path: "/products",

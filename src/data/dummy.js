@@ -534,6 +534,11 @@ export const links = [
         icon: <MdOutlineAccountCircle />,
       },
       {
+        name: "Danh sách rút tiền",
+        route: "request-withdraw",
+        icon: <MdOutlineAccountCircle />,
+      },
+      {
         name: "sider.product",
         route: "products",
         icon: <BsBoxSeam />,

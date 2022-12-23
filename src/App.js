@@ -55,16 +55,15 @@ function App() {
         <BrowserRouter>
           <div className="flex relative dark:bg-main-dark-bg">
             <Routes>
-              <Route element={<PublicRoute isAuth={token} />}>
+              <Route exact element={<PublicRoute isAuth={token} />}>
                 {routes.map((route) => (
-                  <Route path={route.path} element={route.element} />
+                  <Route exact path={route.path} element={route.element} />
                 ))}
               </Route>
-
-              <Route element={<PrivateRoute isAuth={token} />}>
-                <Route element={<Layout />} path="/">
+              <Route exact element={<PrivateRoute isAuth={token} />}>
+                <Route exact element={<Layout />} path="/">
                   {privateRoutes.map((route) => (
-                    <Route path={route.path} element={route.element} />
+                    <Route exact path={route.path} element={route.element} />
                   ))}
                 </Route>
               </Route>

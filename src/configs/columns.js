@@ -1,5 +1,6 @@
 import { convertMongodbTimeToString, Sorter } from "./../utils/utils";
 import Fallback from "./../assets/fallback.jpg";
+import { withdraw } from "../api/services/accountServices";
 const direction = ["ascend", "descend", ""];
 export const categoryColumns = [
   {
@@ -9,6 +10,39 @@ export const categoryColumns = [
   {
     title: "Mô tả",
     dataIndex: "description",
+  },
+];
+export const requestColumns = [
+  {
+    title: "User ID",
+    dataIndex: "user",
+  },
+  {
+    title: "Email Paypal",
+    dataIndex: "emailPaypal",
+  },
+  {
+    title: "Transactional Money",
+    dataIndex: "transactionalMoney",
+  },
+  {
+    title: "Option",
+    dataIndex: "_id",
+    render: (id) => (
+      <button
+        onClick={() => {
+          const withdrawFunc = async () => {
+            const response = await withdraw(id);
+            window.location.replace(response);
+            localStorage.setItem("withdrawId", id);
+          };
+          withdrawFunc();
+        }}
+        className="bg-primary text-white px-4 py-2 "
+      >
+        Approve
+      </button>
+    ),
   },
 ];
 export const accountColumns = [

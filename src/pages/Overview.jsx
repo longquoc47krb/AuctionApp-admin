@@ -18,6 +18,8 @@ import {
 } from "../data/dummy";
 import { useStateContext } from "../contexts/ContextProvider";
 import product9 from "../data/product9.jpg";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const DropDown = ({ currentMode }) => (
   <div className="w-28 border-1 border-color px-2 py-1 rounded-md">
@@ -35,7 +37,13 @@ const DropDown = ({ currentMode }) => (
 
 const Overview = () => {
   const { currentColor, currentMode } = useStateContext();
-
+  const withdrawId = localStorage.getItem("withdrawId");
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (withdrawId) {
+      navigate("/request-withdraw/success");
+    }
+  }, []);
   return (
     <div className="mt-8">
       <div className="flex flex-wrap lg:flex-nowrap justify-center ">
